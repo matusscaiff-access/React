@@ -26,12 +26,12 @@ const App = () => {
 
 
   return (
-    <div className="bg-slate-500">
+    <div className="bg-tiffany">
       <NavBar />
       <div className="content">
-        <h1 className="Text 5x1">{title}</h1>
+        <h1 className="text-5xl font-heading">{title}</h1>
 
-        <button onClick={() => setTitle("Bonjhour")}>Change Title</button>
+        <button className="font-body"  onClick={() => setTitle("Bonjhour")}>Change Title</button>
 
         {
           lessons.map((l) => (

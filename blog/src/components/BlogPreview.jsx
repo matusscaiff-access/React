@@ -4,9 +4,9 @@ const BlogPreview = ({lesson, handleDelete}) => {
     return ( 
         <>
         <section>
-          <h2>{lesson.title}</h2>
-          <p>{lesson.author}</p>
-          <button className="bg-red-400 text-white" onClick={() => handleDelete(lesson.id)}>Delete Lesson</button>
+          <h2 className="font-body">{lesson.title}</h2>
+          <p className="font-body">{lesson.author}</p>
+          <button className="bg-onyx text-white" onClick={() => handleDelete(lesson.id)}>Delete Lesson</button>
         </section>
         </>
      );
