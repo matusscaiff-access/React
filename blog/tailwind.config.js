@@ -19,9 +19,6 @@ export default {
         body:["Oswald", "sand-serif"],
       },
       colors:{ // colours and their hex codes, you can name each colour so that it is easy to reuse later
-        teal: "#488286",
-        tiffany: "#A8DCDA",
-        onyx: "#373E40",
 
         teal:{
           100: "hsl(184, 30, 60)",

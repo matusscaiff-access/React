@@ -1,13 +1,18 @@
+import { Link } from "react-router-dom";
+
 const BlogPreview = ({lesson, handleDelete}) => {
 
 
     return ( 
         <>
-        <section>
-          <h2 className="font-body">{lesson.title}</h2>
-          <p className="font-body">{lesson.author}</p>
-          <button className="bg-onyx text-white" onClick={() => handleDelete(lesson.id)}>Delete Lesson</button>
-        </section>
+        <Link to={"/blog/" + lesson.id}>
+          <section className="mb-4 p-4 bg-teal-200 rounded-lg">
+            <h2 className="text 2xl font-bold">{lesson.title}</h2>
+            <div className="flex justify-end gap-2">
+            </div>
+            <p className="font-body">{lesson.author}</p>
+          </section>
+        </Link>
         </>
      );
 }
