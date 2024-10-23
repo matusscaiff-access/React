@@ -6,7 +6,7 @@ const Home = () => {
     const {data, isPending, error} = usefetch("https://dummyjson.com/posts")
 
     return ( 
-        <div className="bg-tiffany-300">
+        <div className="bg-teal-200 px-10 pt-5">
   
           {isPending && <p>Loading...</p>}
   
